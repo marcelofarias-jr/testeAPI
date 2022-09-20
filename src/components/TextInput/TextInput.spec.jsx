@@ -8,7 +8,7 @@ describe('<TextInput />', () => {
     const fn = jest.fn();
     render(<TextInput handleChange={fn} searchValue={'testando'} />);
 
-    const input = screen.getByPlaceholderText(/type your search/i);
+    const input = screen.getByPlaceholderText(/Digite sua busca/i);
     expect(input.value).toBe('testando');
   });
 
@@ -16,7 +16,7 @@ describe('<TextInput />', () => {
     const fn = jest.fn();
     render(<TextInput handleChange={fn} searchValue="um valor qualquer" />);
 
-    const input = screen.getByPlaceholderText(/type your search/i);
+    const input = screen.getByPlaceholderText(/Digite sua busca/i);
     const value = 'o valor';
 
     userEvent.type(input, value);

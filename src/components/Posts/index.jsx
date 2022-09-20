@@ -1,5 +1,4 @@
 import P from 'prop-types';
-
 import './styles.css';
 
 import { PostCard } from '../PostCard';
